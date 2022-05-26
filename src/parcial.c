@@ -6,6 +6,55 @@
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
  ============================================================================
+Desarrollar en ANSI C:
+Se necesita gestionar el Censo Nacional 2022 y para eso se deberá desarrollar lo siguiente:
+ENTIDADES:
+
+VIVIENDA :
+● idVivienda (comienza en 20000, autoincremental)
+● calle (máximo 25 caracteres)
+● cantidadPersonas
+● cantidadHabitaciones
+● tipoVivienda (1.CASA – 2.DEPARTAMENTO – 3.CASILLA - 4.RANCHO)
+● legajoCensista (debe existir) Validar
+
+CENSISTA :
+● legajoCensista
+● nombre
+● edad
+● telefono
+
+DATOS PREVIOS:
+
+El array de los censistas deberá ser hardcodeado.
+Censista ({100, Ana, 34, 1203-2345}, {101, Juan, 24, 4301-54678}, {102, Sol, 47, 5902-37487} )
+MENU DE OPCIONES:
+A. ALTA VIVENDA
+
+B. MODIFICAR VIVIENDA: Se ingresará el idVivienda, permitiendo en un submenú modificar:
+
+● la calle
+● la cantidad de las personas
+● la cantidad de habitaciones
+● el tipo de vivienda
+
+C. BAJA VIVIENDA: Se ingresará el idVivienda y se realizará una baja lógica.
+
+D. LISTAR VIVENDAS: Hacer un único listado de todas las viviendas ordenados por calle y ante igualdad
+de calle por cantidad de personas.
+
+E. LISTAR CENSISTAS
+
+NOTAS:
+
+I. Se deberá desarrollar bibliotecas por cada entidad, las cuales contendrán las funciones Alta, Baja,
+Modificar y Listar.
+II. Las validaciones (input-UTN), deberán estar en una biblioteca aparte.
+III. Tener en cuenta que no se podrá ingresar a los casos Modificar, Baja y Listar Viviendas; sin antes haber
+realizado al menos un Alta (utilizar banderas y/o contadores).
+IV. El código deberá tener comentarios con la documentación de cada una de las funciones y respetar las reglas
+de estilo de la cátedra.
+
  */
 
 #include <stdio.h>
@@ -25,7 +74,7 @@ int main(void) {
 	char calle[25];
 	int cantidadPersonas;
 	int cantidadHabitaciones;
-	int tipoVivienda; //(1.CASA � 2.DEPARTAMENTO � 3.CASILLA - 4.RANCHO)
+	int tipoVivienda; //(1.CASA – 2.DEPARTAMENTO – 3.CASILLA - 4.RANCHO)
 	int legajoCensista;
 
 	idVivienda = 20000;

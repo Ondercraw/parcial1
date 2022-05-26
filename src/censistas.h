@@ -25,7 +25,7 @@ int cargarCensistas(eCensista* lista);
 
 
 /// @fn int listarCensistas(eCensista*, int)
-/// @brief muestra los censistas
+/// @brief lista los censistas hardcodeados
 ///
 /// @param lista
 /// @param tamanio

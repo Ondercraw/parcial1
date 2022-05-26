@@ -41,14 +41,14 @@ int cargarArray(eVivienda *lista, int tamanio, int idVivienda, char calle[25],
 /// @return
 int inicializarArray(eVivienda *lista, int tamanio);
 /// @fn int mostrarId(eVivienda*, int)
-/// @brief muestra todos los is existentes
+/// @brief muestra todos los ID existentes
 ///
 /// @param lista
 /// @param tamanio
 /// @return
 int mostrarId(eVivienda *lista, int tamanio);
 /// @fn int encontrarId(eVivienda*, int, int)
-/// @brief busca el id pedido en el main y su posicion
+/// @brief busca el ID pedido en el main y su posicion
 ///
 /// @param lista
 /// @param tamanio
@@ -56,7 +56,7 @@ int mostrarId(eVivienda *lista, int tamanio);
 /// @return en caso de encontrarlo devuelve la posicion de ese id, en caso de no hacerlo devuelve -1
 int encontrarId(eVivienda *lista, int tamanio, int idVivienda);
 /// @fn int borrarVivienda(eVivienda*, int, int)
-/// @brief busca la posicion del id pedido en el main y establece su estado a VACIO
+/// @brief busca la posicion del ID pedido en el main y establece su estado a VACIO
 ///
 /// @param lista
 /// @param tamanio
@@ -64,14 +64,14 @@ int encontrarId(eVivienda *lista, int tamanio, int idVivienda);
 /// @return en caso de borrarlo devuelve 0, en caso de no hacerlo devuelve -1
 int borrarVivienda(eVivienda *lista,int tamanio,int idVivienda);
 /// @fn int ordenarViviendas(eVivienda*, int)
-/// @brief ordena las viviendas segun sus calles, en caso de igualdad segun su cantidad de personas
+/// @brief ordena las viviendas segun el nombre de las calles, en caso de igualdad segun la cantidad de personas
 ///
 /// @param lista
 /// @param tamanio
 /// @return
 int ordenarViviendas(eVivienda *lista, int tamanio);
 /// @fn int listarViviendas(eVivienda*, int)
-/// @brief muestra todas las viviendas existentes
+/// @brief muestra todas las viviendas
 ///
 /// @param lista
 /// @param tamanio

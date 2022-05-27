@@ -122,7 +122,7 @@ int ordenarViviendas(eVivienda *lista, int tamanio) {
 
 	return 0;
 }
-int listarViviendas(eVivienda *lista, int tamanio) {
+int listarViviendas(eVivienda *lista, eCensista* listaC, int tamanio) {
 	int i;
 
 	for (i = 0; i < tamanio; i++) {
@@ -134,8 +134,28 @@ int listarViviendas(eVivienda *lista, int tamanio) {
 					"Cantidad de Habitaciones: %d\n"
 					"Tipo de Vivienda: %d\n"
 					"Legajo de Censista: %d\n",lista[i].idVivienda, lista[i].calle,lista[i].cantidadPersonas, lista[i].cantidadHabitaciones,lista[i].tipoVivienda, lista[i].legajoCensista);
-		} else {
-			break;
+		}
+		if(lista[i].legajoCensista == 100) {
+
+			printf("\nlos datos del censista son:\n"
+			        		"Legajo: %d\n"
+			        		"Nombre: %s\n"
+			        		"Edad: %d\n"
+			        		"Telefono: %s\n", lista[0].legajoCensista, listaC[0].nombre,listaC[0].edad, listaC[0].telefono);
+		}else if(lista[i].legajoCensista == 101) {
+
+			printf("\nlos datos del censista son:\n"
+			        		"Legajo: %d\n"
+			        		"Nombre: %s\n"
+			        		"Edad: %d\n"
+			        		"Telefono: %s\n", lista[1].legajoCensista, listaC[1].nombre,listaC[1].edad, listaC[1].telefono);
+		}else if(lista[i].legajoCensista == 102){
+
+			printf("\nlos datos del censista son:\n"
+			        		"Legajo: %d\n"
+			        		"Nombre: %s\n"
+			        		"Edad: %d\n"
+			        		"Telefono: %s\n", lista[2].legajoCensista, listaC[2].nombre,listaC[2].edad, listaC[2].telefono);
 		}
 	}
 

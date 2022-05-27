@@ -285,7 +285,7 @@ int main(void) {
 		case 4:
 			if (idVivienda != 20000) {
 				ordenarViviendas(viviendas, longitud);
-				listarViviendas(viviendas, longitud);
+				listarViviendas(viviendas,censistas, longitud);
 			} else {
 				printf("\n\nNo se ingreso ninguna vivienda\n");
 			}

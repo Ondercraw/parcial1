@@ -8,6 +8,8 @@
 #ifndef VIVIENDAS_H_
 #define VIVIENDAS_H_
 
+#include "censistas.h"
+
 typedef struct {
 	int idVivienda;
 	char calle[25];
@@ -76,6 +78,6 @@ int ordenarViviendas(eVivienda *lista, int tamanio);
 /// @param lista
 /// @param tamanio
 /// @return
-int listarViviendas(eVivienda *lista,int tamanio);
+int listarViviendas(eVivienda *lista, eCensista* listaC ,int tamanio);
 
 #endif /* VIVIENDAS_H_ */
